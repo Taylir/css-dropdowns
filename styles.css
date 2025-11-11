@@ -18,16 +18,36 @@ select {
   transition: all 200ms ease-in-out();
 }
 
+selectedcontent {
+  border: none;
+  display: flex;
+  gap: 24px;
+}
+
 select:hover,
 select:focus {
   background: oklch(.50 0 0);
 }
 
-select:focus {
-  border-bottom-left-radius: 6px;
-  border-bottom-right-radius: 6px;
+select option:checked {
+  background-color: oklch(.50 .2 240);
+}
+
+select option::checkmark {
+  display: none;
 }
 
 select option {
-  background-color: yellow;
+  background-color: oklch(.50 0 0);
+  border: 2px solid oklch(.30 0 0);
+  padding: 16px;
+}
+
+select option:hover {
+  background-color: oklch(.60 0 0);
+}
+
+.flag {
+  width: 30px;
+  height: 20px;
 }
