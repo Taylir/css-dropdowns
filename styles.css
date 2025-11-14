@@ -64,3 +64,16 @@ select option:hover {
   padding: 2px;
   border-radius: 0;
 }
+
+@media (max-width:800px) {
+  body {
+    gap: 200px;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width:472px) {
+  body {
+    margin-bottom: 200px;
+  }
+}
