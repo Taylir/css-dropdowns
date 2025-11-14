@@ -1,13 +1,9 @@
 body {
   background-color: oklch(.30 0 0);
   height: 100vh;
-  display: grid;
-  place-items: center;
-}
-
-select,
-::picker(select) {
-  appearance: base-select;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 select {
@@ -18,12 +14,6 @@ select {
   transition: all 200ms ease-in-out();
 }
 
-selectedcontent {
-  border: none;
-  display: flex;
-  gap: 24px;
-}
-
 select:hover,
 select:focus {
   background: oklch(.50 0 0);
@@ -31,10 +21,6 @@ select:focus {
 
 select option:checked {
   background-color: oklch(.50 .2 240);
-}
-
-select option::checkmark {
-  display: none;
 }
 
 select option {
@@ -47,7 +33,11 @@ select option:hover {
   background-color: oklch(.60 0 0);
 }
 
-.flag {
-  width: 30px;
-  height: 20px;
+#business {
+  background-color: white;
+  border-radius: 4px;
+}
+
+#business:hover {
+  background-color: oklch(.80 0 0);
 }

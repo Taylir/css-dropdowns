@@ -1,6 +1,6 @@
-const selecter = document.querySelectorAll("select");
+const selector = document.querySelector("select");
 
-selecter.forEach(select => select.addEventListener("change", (e) => {
-  console.log(e.target.value)
-  select.blur();
-}));
+selector.addEventListener("change", e => {
+  console.log(e.target.value);
+  selector.blur();
+})
